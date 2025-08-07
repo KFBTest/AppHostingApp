@@ -1,13 +1,14 @@
 import Link from "next/link";
 
 export default function Home() {
-  const message = process.env["MESSAGE"] || "Hello!";
+  const message = process.env["MESSAGE"];
   return (
     <main className="content">
       <h1 className="heading">Next.js on Firebase App Hosting</h1>
       <p>{message}</p>
 
       <section className="features">
+        {/*
         <article className="card">
           <h2>Scalable, serverless backends</h2>
           <p>
@@ -46,6 +47,26 @@ export default function Home() {
             <Link href="/ssg">
               {" "}
               <code>/ssg</code>
+            </Link>{" "}
+          </p>
+        </article>*/}
+        <article className="card">
+          <h2>Email Validation</h2>
+          <p>
+            Find interesting information about your email{" "}
+            <Link href="/check">
+              {" "}
+              <code>/EmailValidation</code>
+            </Link>{" "}
+          </p>
+        </article>
+        <article className="card">
+          <h2>Phone Number Validation</h2>
+          <p>
+            Analyze suspicious phone numbers{" "}
+            <Link href="/phone">
+              {" "}
+              <code>Phone number check</code>
             </Link>{" "}
           </p>
         </article>
