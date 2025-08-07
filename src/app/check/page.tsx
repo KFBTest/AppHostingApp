@@ -1,4 +1,5 @@
-import EmailValidator from './compos/EmailValidator';
+import EmailValidator from './compos/emailv';
+
 
 export default function EmailValidatorPage() {
   return (

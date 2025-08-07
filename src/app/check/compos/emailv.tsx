@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 
 // Define a type for the API response to ensure type safety
